@@ -1,9 +1,5 @@
 "use strict";
 
-const nextConfig = {
-  future: {
-    webpack5: true,
-  },
-};
+const { withGlobalCss } = require('next-global-css');
 
-module.exports = nextConfig;
+module.exports = withGlobalCss();
